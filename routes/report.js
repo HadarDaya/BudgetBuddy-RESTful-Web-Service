@@ -5,7 +5,7 @@
 
 const express = require('express');
 const router = express.Router();
-const { getMonthlyReport } = require('../controllers/costController');
+const { getMonthlyReport } = require('../controllers/cost');
 
 /**
  * Route for retrieving monthly cost report, grouped by category for a specific user, filtered by given month and year.

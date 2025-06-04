@@ -6,7 +6,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { getTeamMembers } = require('../controllers/aboutController');
+const { getTeamMembers } = require('../controllers/about');
 
 /**
  * Route for retrieving team members' information

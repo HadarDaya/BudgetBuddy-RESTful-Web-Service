@@ -2,7 +2,7 @@ import sys
 import requests
 
 filename = input("filename=")
-line = "http://localhost:3000"
+line = "https://budgetbuddy-restful-web-service.onrender.com"
 output = open(filename,"w")
 sys.stdout = output
 print(line)
@@ -33,7 +33,7 @@ print("------------------------------")
 try:
   text = ""
   #getting the report
-  url = line + "/api/report/?id=123123&year=2025&month=5"
+  url = line + "/api/report/?id=123123&year=2025&month=6"
   data = requests.get(url)
   print("url="+url)
   print("data.status_code="+str(data.status_code))
@@ -69,7 +69,7 @@ print("------------------------------")
 try:
   text = ""
   #getting the report
-  url = line + "/api/report/?id=123123&year=2025&month=5"
+  url = line + "/api/report/?id=123123&year=2025&month=6"
   data = requests.get(url)
   print("url="+url)
   print("data.status_code="+str(data.status_code))

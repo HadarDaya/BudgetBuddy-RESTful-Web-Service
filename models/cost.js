@@ -35,7 +35,6 @@ const costSchema = new schema({
     sum: {
         type: Number,
         required: true,
-        min: 0
     },
     day: {
         type: Number,

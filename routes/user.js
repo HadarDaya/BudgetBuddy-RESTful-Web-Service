@@ -5,7 +5,7 @@
 
 const express = require('express');
 const router = express.Router();
-const { getUserById, handleMissingUserId } = require('../controllers/userController');
+const { getUserById, handleMissingUserId } = require('../controllers/user');
 
 /**
  * Route for handling missing user id

@@ -5,7 +5,6 @@
 
 const Cost = require('../models/cost'); // Mongoose model for cost items
 const { costCategories } = require('../utils/constants');
-const User = require("../models/user");
 
 /**
  * Add a new cost item to the database.
@@ -48,10 +47,6 @@ const addCost = async (req, res) => {
         }
 
         // Validate sum
-        if (numericSum < 0) {
-            res.status(400).json({error: 'Sum cannot be negative'});
-            return;
-        }
         if (isNaN(numericSum)){
             res.status(400).json({ error: 'Sum must be a number' });
             return;

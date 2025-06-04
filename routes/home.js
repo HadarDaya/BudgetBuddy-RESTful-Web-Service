@@ -4,7 +4,7 @@
 
 const express = require('express');
 const router = express.Router();
-const { retrieveWelcome } = require('../controllers/homeController');
+const { retrieveWelcome } = require('../controllers/home');
 
 /**
  * Route for retrieving welcome message

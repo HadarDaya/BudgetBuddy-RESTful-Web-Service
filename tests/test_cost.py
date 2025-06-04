@@ -73,7 +73,7 @@ def test_userid_as_numeric_string():
     assert response.json()["cost"]["userid"] == 1234
 
 ########### 3. Sum validation ###########
-# 3.1 sum is negative (not allowed)
+# 3.1 sum is negative (allowed)
 def test_negative_sum():
     data = {
         "description": "Refund",
@@ -82,8 +82,8 @@ def test_negative_sum():
         "sum": -5
     }
     response = post_cost(data)
-    assert response.status_code == 400
-    assert "error" in response.json()
+    assert response.status_code == 201
+    assert "cost" in response.json()
 
 # 3.2 sum is small positive number (0.10), should be accepted
 def test_sum_too_small():

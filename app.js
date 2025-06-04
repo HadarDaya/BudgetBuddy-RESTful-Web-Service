@@ -12,11 +12,11 @@ const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 
 // Import routes handlers
-const indexRoutes = require('./routes/homeRoutes');
-const addCostRoutes = require('./routes/costRoutes');
-const monthlyReportRoutes = require('./routes/reportRoutes');
-const userTotalRoutes = require('./routes/userRoutes');
-const aboutRoutes = require('./routes/aboutRoutes');
+const indexRoutes = require('./routes/home');
+const addCostRoutes = require('./routes/cost');
+const monthlyReportRoutes = require('./routes/report');
+const userTotalRoutes = require('./routes/user');
+const aboutRoutes = require('./routes/about');
 
 const app = express();
 

@@ -5,7 +5,7 @@
 
 const express = require('express');
 const router = express.Router();
-const { addCost } = require('../controllers/costController');
+const { addCost } = require('../controllers/cost');
 
 /**
  * Route for adding a new cost item to db
