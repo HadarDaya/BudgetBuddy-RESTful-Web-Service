@@ -2,7 +2,7 @@ import sys
 import requests
 
 filename = input("filename=")
-line = "https://budgetbuddy-restful-web-service.onrender.com"
+line = "https://final-project-budgetbuddy-restful-web.onrender.com"
 output = open(filename,"w")
 sys.stdout = output
 print(line)
